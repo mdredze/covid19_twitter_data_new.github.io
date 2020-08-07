@@ -5,10 +5,10 @@ import pandas as pd
 # Naming convention: []_l for longitunial; []_i for index
 
 # Change csv file in " " to latest updated data
-data_state_l = pd.read_csv("longitudinal-state-2020-07-05.csv")
-data_city_l = pd.read_csv("longitudinal-city-2020-06-29.csv")
-data_state_i = pd.read_csv("index-state.csv")
-data_city_i = pd.read_csv("index-city.csv")
+data_state_l = pd.read_csv("state-longi-072620.csv")
+data_city_l = pd.read_csv("city-longi-072620.csv")
+data_state_i = pd.read_csv("state-index-072620.csv")
+data_city_i = pd.read_csv("city-index-072620.csv")
 
 # Assign csv content to dataframe
 df_l = pd.DataFrame(data_state_l)
