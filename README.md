@@ -8,7 +8,7 @@ There are 3 Python scripts in the *data* folder:
 
 generate-latest.py is the only one out of the three that requires some modification.
 See the 4 uploaded file naming conventions in this section:
-'''python
+'''
 data_state_l = pd.read_csv("state-longi-[DATE].csv")
 data_city_l = pd.read_csv("city-longi-[DATE].csv")
 data_state_i = pd.read_csv("state-index-[DATE].csv")
@@ -18,7 +18,7 @@ data_city_i = pd.read_csv("city-index-[DATE].csv")
 Replace *[DATE]* following the last updated file name and run the script to generate newest
 data files, named by following:
 
-'''python
+'''
 data_state_l.to_csv("longitudinal_state_latest.csv", index=False)
 data_city_l.to_csv("longitudinal_city_latest.csv", index=False)
 df_l.to_csv("longitudinal_compiled.csv", index=False)
