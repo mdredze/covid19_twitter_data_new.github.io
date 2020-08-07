@@ -1,6 +1,6 @@
-# Guide to Maintenance
+#Guide to Maintenance
 
-### How to update data
+###How to update data
 There are 3 Python scripts in the *data* folder:
 - generate-latest.py
 - heatmap.py
@@ -29,7 +29,7 @@ df_i.to_csv("index_compiled.csv", index=False)
 Do not change the names of these files, as that will affect the linked data URLs for other pages!
 Compiled means regional data is included along with both state and city data.
 
-### Checklist before hosting the website:
+###Checklist before hosting the website:
 - [ ] Google Maps API key created under different account for billing
 - [ ] Google Analytics account created and embedded
 - [ ] Have new data be updated to this GitHub account
