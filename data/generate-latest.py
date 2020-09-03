@@ -1,14 +1,16 @@
 import csv
 import numpy as np
 import pandas as pd
+import sys
 
+_date = sys.argv[-1]
 # Naming convention: []_l for longitunial; []_i for index
 
 # Change csv file in " " to latest updated data
-data_state_l = pd.read_csv("state-longi-072620.csv")
-data_city_l = pd.read_csv("city-longi-072620.csv")
-data_state_i = pd.read_csv("state-index-072620.csv")
-data_city_i = pd.read_csv("city-index-072620.csv")
+data_state_l = pd.read_csv("state-longi-{}.csv".format(_date))
+data_city_l = pd.read_csv("city-longi-{}.csv".format(_date))
+data_state_i = pd.read_csv("state-index-{}.csv".format(_date))
+data_city_i = pd.read_csv("city-index-{}.csv".format(_date))
 
 # Assign csv content to dataframe
 df_l = pd.DataFrame(data_state_l)
