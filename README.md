@@ -1,5 +1,7 @@
 # Guide to Maintenance
 
+## This repo is deprecated. Please see the repo [here](https://github.com/mdredze/covid19_social_mobility.github.io).
+
 ## How to update data
 There are 3 Python scripts in the *data* folder:
 - generate-latest.py
